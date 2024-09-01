@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        Main{margin-top: 60px} 
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Provinsi Lampung</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#deskripsi">Deskripsi</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="#penduduk">Penduduk</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="#daftar">Daftar Kecamatan</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="#peta">Peta</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="#kritiksaran">Kritik dan Saran</a>
+            <li class="nav-item">
+                <Pembuat class="nav-link active" aria-current="page" href="#pembuat" data-bs-toggle="modal" data-bs-target="#exampleModal">Pembuat</a>
+            </li>
+            </ul>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <main class="container border border-success rounded">
+        <div class="alert alert-success text-center" role="alert">
+            <h1>KOTA BANDAR LAMPUNG</h1>
+            <h4>PROVINSI LAMPUNG</h4>
+        </div>
+    
+        <div class="row">
+            <div class="col-6 offset-3"> 
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/MenaraSiger.jpeg" class="d-block w-100" alt="Pemandangan 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/PemandanganLampung1.jpg" class="d-block w-100" alt="Pemandangan 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/PemandanganLampung3.jpg" class="d-block w-100" alt="Pemandangan 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card mt-5">
+            <div class="card-header alert alert-success text-">
+                <h4 id="deskripsi">Deskripsi</h4>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p style="text-indent: 45px; text-align: justify">Bandar Lampung adalah ibu kota dari Provinsi Lampung. Dengan kepadatan
+                5.332/km², Kota Bandar Lampung merupakan salah satu kota terpadat di
+                Pulau Sumatra, serta termasuk salah satu kota besar dan kota terpadat di
+                Indonesia. Sebagai kota terbesar keempat di Sumatera, Bandar Lampung
+                berperan sebagai penghubung kegiatan ekonomi dari Pulau Jawa ke Pulau
+                Sumatera.</p>
+                <p style="text-indent: 45px; text-align: justify">
+                    Secara geografis, Kota ini merupakan gerbang utama Pulau Sumatra,
+                    tepatnya kurang lebih 165 km sebelah barat laut Jakarta, memiliki andil
+                    penting dalam jalur transportasi darat dan aktivitas pendistribusian
+                    logistik dari Jawa menuju Sumatra maupun sebaliknya. Kota Bandar Lampung
+                    merupakan Ibu Kota Provinsi Lampung sekarang, sebelumnya Kota Bandar
+                    Lampung secara historis bernama Tanjung Karang - Teluk Betung kota ini
+                    bagian dari wilayah Way Handak Kabupaten Lampung Selatan, pada sekitar
+                    tahun 1982 terjadi peluasan, sehingga Kota Tanjung Karang - Teluk Betung
+                    dijadikan satu yaitu Kota Bandar Lampung, yakni Ibu Kota dari pada
+                    Provinsi Lampung disebut Lampung yang artinya Sang Bumi Lampung.
+                </p>
+            </div>
+        </div>
+    
+        <div class="card mt-5">
+            <div class="card-header">
+                <div class="card-header alert alert-success text-">
+                    <h4 id="penduduk">Penduduk</h4>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped table-bordered">
+                        <tr class="table-active">
+                            <th>Penduduk</th>
+                            <th>Jumlah</th>
+                        </tr>
+                        <tr>
+                            <td>Laki - Laki</td>
+                            <td>603.532 Jiwa</td>
+                        </tr>
+                        <tr>
+                            <td>Perempuan</td>
+                            <td>594.066 Jiwa</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>1.197.598 Jiwa</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                </div>
+                
+
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="card-header alert alert-success text-">
+                    <div class="card-body">
+                        <h4 id="daftar">Daftar Kecamatan</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <ul>
+                                    <li>Bumi Waras</li>
+                                    <li>Enggal</li>
+                                    <li>Kedamaian</li>
+                                    <li>Kedaton</li>
+                                    <li>Kemiling</li>
+                                    <li>Labuhan Ratu</li>
+                                    <li>Langkapura</li>
+                                    <li>Panjang</li>
+                                    <li>Rajabasa</li>
+                                    <li>Sukabumi</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <ul>
+                                    <li>Sukarame</li>
+                                    <li>Tanjung Senang</li>
+                                    <li>Tanjung Karang Barat</li>
+                                    <li>Tanjung Karang Pusat</li>
+                                    <li>Tanjung Karang Timur</li>
+                                    <li>Teluk Betung Barat</li>
+                                    <li>Teluk Betung Selatan</li>
+                                    <li>Teluk Betung Timur</li>
+                                    <li>Teluk Betung Utara</li>
+                                    <li>Way Halim</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+                    
+        <div class="card mt-4" style="width: 18rem;">
+            <div class="card-header alert alert-success text-">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LINK WEBSITE</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="https://bandarlampungkota.go.id/" target="_blank" rel="noopener noreferrer">https://bandarlampungkota.go.id/</a>
+                </div>
+            </div>
+            </div>
+            
+        <h3 id="peta">Peta</h3>
+        <div class="map-container">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+            <iframe
+                width="760"
+                height="300"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Bandar+Lampung&t=k&z=11&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+            ></iframe>
+            </div>
+        </div>
+        </div>
+        <div class="card-body">
+            <div class="card-header alert alert-success text-">
+                <h3 id="kritiksaran">Kritik dan Saran</h3>
+                <form action="">
+                <label for=" ">Nama</label>
+                <input type="Text" name="nama" id="nama" />
+                <br />
+                <label for=" ">Email</label>
+                <input type="Text" email="nama" id="email" />
+                <br />
+                <label for="">Kritik dan Saran</label>
+                <textarea name="Kritik" id="Kritik" cols="30" rows="10"></textarea>
+                <br />
+                
+                <div class="text-end">
+                    <button type="button" class="btn btn-success">Kirim</button>
+                </div>
+                </form>
+            </div>
+            
+
+        </div>
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 id="pembuat" class="modal-title">Pembuat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>
+                    Nama: Muhammad Naufal Hidayat
+                    Nim : 23/520500/SV/23249
+                    Kelas: B
+                    Sarjana Terapan Sistem Informasi Geografis </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    
+    </body>
+    </html>
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
